@@ -4,8 +4,8 @@ import background from '../resources/img.png'
 import foto from '../resources/foto.jpg'
 import background2 from '../resources/background2.png'
 import resilience from '../resources/resilience.png'
-import mission from '../resources/work.png'
-import proativity from '../resources/commitment.png'
+import proativity from '../resources/work.png'
+import commitment from '../resources/commitment.png'
 
 function Home() {
     
@@ -31,19 +31,19 @@ function Home() {
             </section>
             <section className="home__softskills">
                 <article className="home__softskills-card">
-                    <img />
+                    <img src={proativity} alt="Imagem de ferramentas de trabalho" className="card__photo"/>
                     <h2>Fazer, fazer, fazer</h2>
-                    <p>Falar sobre Proatividade</p>
+                    <p>Minha trajetória até aqui tem me mostrado que preciso ser proativo. Correr atrás dos meus sonhos não pode ficar em segundo plano, ninguém vai fazer isso por mim.</p>
                 </article>
                 <article className="home__softskills-card">
-                    <img />
+                    <img src={commitment} alt="Imagem de um aperto de duas mãos" className="card__photo"/>
                     <h2>Missão dada é missão cumprida</h2>
-                    <p>Falar sobre comprometimento</p>
+                    <p>Comprometimento com meus objetivos é o meu mote. Excelência é apenas uma questão de tempo e consistência.</p>
                 </article>
                 <article className="home__softskills-card">
-                    <img />
+                    <img src={resilience} alt="Imagem de uma escada sendo dobrada sem quebrar" className="card__photo"/>
                     <h2>Adaptar-se é preciso</h2>
-                    <p>Falar sobre resiliência</p>
+                    <p>A falta de resiliência não é uma opção, meu caminho como professor me ensinou que falhas são comuns, e que a frustração não pode me parar. Seguir em frente é o único caminho possível.</p>
                 </article>
             </section>            
         </HomeContainer>
@@ -54,9 +54,9 @@ export default Home;
 
 const HomeContainer = styled.main`
     background-image: url(${background});
-    height: 90vh;
+    min-height: 90vh;
     color: #FFF;
-    padding: 3rem;
+    padding: 3rem 3rem 5rem 3rem;
 
     .home__title-photo-section {
         display:flex;
@@ -78,10 +78,17 @@ const HomeContainer = styled.main`
         position:relative;   
         padding:1rem;
         overflow:hidden;
+        transition: .4s;
     }
 
     .home__subtitulo-container div {
         position:absolute;
+    }
+
+    .home__subtitulo-container:hover {
+        background-color:var(--default-color);
+        box-shadow: -3px -3px 2rem var(--default-color);
+        cursor: pointer;
     }
 
     .home__subtitulo-container div:nth-child(1) {
@@ -89,8 +96,12 @@ const HomeContainer = styled.main`
         left: -100%;
         width: 100%;
         height: 2px;
-        background:linear-gradient(90deg, transparent, #ff7b00);
+        background:linear-gradient(90deg, transparent, var(--default-color));
         animation: cargo1 2s linear infinite;
+    }
+
+    .home__subtitulo-container:hover div:nth-child(1) {
+        background:linear-gradient(90deg, transparent, #FFF);
     }
 
     .home__subtitulo-container div:nth-child(2) {
@@ -98,9 +109,13 @@ const HomeContainer = styled.main`
         top: -100%;
         width: 2px;
         height: 100%;
-        background:linear-gradient(180deg, transparent, #ff7b00);
+        background:linear-gradient(180deg, transparent, var(--default-color));
         animation: cargo2 2s linear infinite;
         animation-delay: 0.5s;
+    }
+
+    .home__subtitulo-container:hover div:nth-child(2) {
+        background:linear-gradient(180deg, transparent, #FFF);
     }
 
     .home__subtitulo-container div:nth-child(3) {
@@ -108,9 +123,13 @@ const HomeContainer = styled.main`
         height: 2px;
         width: 100%;
         right: -100%;
-        background:linear-gradient(270deg, transparent, #ff7b00);
+        background:linear-gradient(270deg, transparent, var(--default-color));
         animation: cargo3 2s linear infinite;
         animation-delay: 1s;
+    }
+
+    .home__subtitulo-container:hover div:nth-child(3) {
+        background:linear-gradient(270deg, transparent, #FFF);
     }
 
     .home__subtitulo-container div:nth-child(4) {
@@ -118,20 +137,28 @@ const HomeContainer = styled.main`
         width: 2px;
         height:100%;
         left: 0;
-        background:linear-gradient(360deg, transparent, #ff7b00);
+        background:linear-gradient(360deg, transparent, var(--default-color));
         animation: cargo4 2s linear infinite;
         animation-delay: 1.5s; 
+    }
+
+    .home__subtitulo-container:hover div:nth-child(4) {
+        background:linear-gradient(360deg, transparent, #FFF);
     }
 
     .home__subtitulo {
         text-align:center;
         font-size: 2rem;
-        color: #ff7b00;   
+        color: var(--default-color);   
+    }
+
+    .home__subtitulo-container:hover .home__subtitulo {
+        color: #FFF;
     }
 
     .home__frase-principal {
         font-size:1.3rem;
-        color: #ff7b00;
+        color: var(--default-color);
         text-transform: uppercase;
         margin-left:1.5rem;
     }
@@ -188,7 +215,7 @@ const HomeContainer = styled.main`
         height: 20rem;
         object-fit: cover;        
         margin: 0 auto;
-        border: .5rem solid #ff7b00;
+        border: .5rem solid var(--default-color);
         border-radius:100%;
     }
 
@@ -207,13 +234,43 @@ const HomeContainer = styled.main`
 
     .home__softskills-card {
         background: url(${background2});
-        text-align:center;
-        padding: 1rem;
-        width: 21%;
+        padding: 3rem;
+        max-width: 25%;
+        position:relative;
+        transition: .3s;
+    }
+
+    .home__softskills-card:hover {
+        border: .3rem solid var(--default-color);
+        cursor:pointer;
+        transform: scale(1.05)
+    }
+
+    .home__softskills-card:hover::after {
+        content: '';
+        width: .3rem;
+        height: 3rem;
+        background-color: var(--default-color);
+        position:absolute;
+        bottom: -19%;
+        right:50%;
+        margin-bottom: 1rem;
+    }
+
+    .card__photo {
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+        filter:invert(100%);
     }
 
     .home__softskills-card h2 {
         font-weight: bolder;
+        margin-bottom: 2rem;
+    }
+
+    .home__softskills-card p {
+        font-size: 1rem;
     }
 `;
 

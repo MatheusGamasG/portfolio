@@ -33,6 +33,11 @@ const HeaderContainer = styled.section`
         letter-spacing: 4px;
         font-size: 2rem;
         color: white;
+        transition: .3s;
+    }
+
+    .header__logo:hover {
+        color: var(--default-color);
     }
 
     .header__logo:hover {
@@ -48,11 +53,13 @@ const HeaderContainer = styled.section`
         text-transform:uppercase;
         padding: 1rem;
         font-weight:bold;
+        transition: .3s;
     }
 
     .header__navigation-anchor:hover {
         cursor: pointer;
         opacity: .8;
-        border-bottom: .3rem solid #ff7b00;
+        border-bottom: .3rem solid var(--default-color);
+        color: var(--default-color);
     }
 `
