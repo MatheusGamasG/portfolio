@@ -9,11 +9,10 @@ function Header() {
         <HeaderContainer>
             <h2 className="header__logo">MTH</h2>
             <nav className="header__navigation">
-                <a className="header__navigation-anchor">Home</a>
-                <a className="header__navigation-anchor">Sobre</a>
-                <a className="header__navigation-anchor">Habilidades</a>
-                <a className="header__navigation-anchor">Formação</a>
-                <a className="header__navigation-anchor">Projetos</a>
+                <a className="header__navigation-anchor" href="#inicio">Início</a>
+                <a className="header__navigation-anchor" href="#sobre">Sobre</a>
+                <a className="header__navigation-anchor" href="">Formação e Habilidades</a>
+                <a className="header__navigation-anchor" href="">Projetos</a>
             </nav>
         </HeaderContainer>
     )
@@ -27,6 +26,8 @@ const HeaderContainer = styled.section`
     justify-content: space-between;
     padding: 0 3rem;
     align-items: center;
+    positin:sticky;
+    top: 20px;
 
     .header__logo {
         font-famiy:roboto, sans-serif;
@@ -54,6 +55,8 @@ const HeaderContainer = styled.section`
         padding: 1rem;
         font-weight:bold;
         transition: .3s;
+        color: #FFF;
+        text-decoration:none;
     }
 
     .header__navigation-anchor:hover {

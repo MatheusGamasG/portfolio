@@ -11,7 +11,7 @@ function Home() {
     
 
     return (
-        <HomeContainer>
+        <HomeContainer id="inicio">
             <section className="home__title-photo-section">
                 <div className="home__textos">
                     <p className="home__frase-principal">Ser proativo, ser consistente.</p>
