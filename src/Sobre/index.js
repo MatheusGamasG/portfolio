@@ -6,7 +6,7 @@ import iconInsta from "../resources/instagram.png";
 import iconGmail from "../resources/logotipo-do-gmail.png";
 
 function Sobre() {
-
+ 
     return (
         <>
             <SobreContainer id="sobre">
@@ -22,7 +22,7 @@ function Sobre() {
                     <a href="https://github.com/MatheusGamasG" rel="noreferrer" target="_blank"><img src={iconGithub} alt="Icone do Github" className="sobre__contato-icone" /></a>
                     <a href="mailto:matheusgamasg@gmail.com" rel="noreferrer"><img src={iconGmail} alt="Icone do Gmail" className="sobre__contato-icone" /></a>
                     <a href="https://www.instagram.com/matheus.guimaraes_/" rel="noreferrer" target="_blank"><img src={iconInsta} alt="Icone do Instagram" className="sobre__contato-icone" /></a>
-                </section>
+                </section>                
             </SobreContainer>
         </>
     )

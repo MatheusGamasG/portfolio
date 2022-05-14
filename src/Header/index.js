@@ -11,8 +11,8 @@ function Header() {
             <nav className="header__navigation">
                 <a className="header__navigation-anchor" href="#inicio">Início</a>
                 <a className="header__navigation-anchor" href="#sobre">Sobre</a>
-                <a className="header__navigation-anchor" href="">Formação e Habilidades</a>
-                <a className="header__navigation-anchor" href="">Projetos</a>
+                <a className="header__navigation-anchor" href="#formacao-habilidades">Formação e Habilidades</a>
+                <a className="header__navigation-anchor" href="#projetos">Projetos</a>
             </nav>
         </HeaderContainer>
     )
@@ -26,8 +26,7 @@ const HeaderContainer = styled.section`
     justify-content: space-between;
     padding: 0 3rem;
     align-items: center;
-    positin:sticky;
-    top: 20px;
+    min-height: 7vh;
 
     .header__logo {
         font-famiy:roboto, sans-serif;

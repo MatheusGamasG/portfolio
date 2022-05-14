@@ -252,7 +252,7 @@ const HomeContainer = styled.main`
         height: 3rem;
         background-color: var(--default-color);
         position:absolute;
-        bottom: -19%;
+        bottom: -4rem;
         right:50%;
         margin-bottom: 1rem;
     }
