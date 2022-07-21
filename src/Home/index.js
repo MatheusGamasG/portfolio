@@ -21,7 +21,7 @@ function Home() {
                         <div></div>
                         <div></div>
                         <div></div>
-                        <h3 className="home__subtitulo">Desenvolvedor Front-End</h3>  
+                        <h3 className="home__subtitulo">Desenvolvedor Júnior</h3>  
                     </div>                    
                 </div>
                 <figure className="home__foto-container">
