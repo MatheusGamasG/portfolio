@@ -6,7 +6,7 @@ import SimpleSlider from "../Carousel";
 function Projetos() {
 
     return (
-        <ProjetosContainer>
+        <ProjetosContainer id="projetos">
             <h2 className="projetos__titulo">Projetos.</h2>
             <div className="projetos__slider">
                 <SimpleSlider />

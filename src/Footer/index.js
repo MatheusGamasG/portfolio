@@ -7,14 +7,15 @@ export default function Footer() {
 
     return (
         <FooterDiv>
-            <p>Desenvolvimento com React por <a href="https://www.linkedin.com/in/matheus-gamas-g/">Matheus Guimarães</a></p>
+            <p>Desenvolvido com React</p>
+            <p><a href="https://www.linkedin.com/in/matheus-gamas-g/">Matheus Guimarães</a> - 2022</p>
         </FooterDiv>
     );
 }
 
 const FooterDiv = styled.div`
         background-image: url(${background});
-        padding: 3rem;
+        padding: 1.5rem 3rem;
         text-align: center;
         color: #FFFFFF;
         font-size: 1.2rem;
