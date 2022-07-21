@@ -3,7 +3,6 @@
 O objetivo desse repo é de construir meu portfólio pessoal. O intuit é mantê-lo sempre atualizado para demonstrar minha evolução enquanto aprendiz de programação. ☕📙
 
 ## Construído com:
-#
 
 <div>
     <img height="50rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
@@ -15,8 +14,8 @@ O objetivo desse repo é de construir meu portfólio pessoal. O intuit é mantê
 </div>
 
 ## Inicializando o projeto:
-#
-O deploy do projeto se encontra no link http://
+
+O deploy do projeto se encontra no link https://matheusgamasg-portfolio.netlify.app/
 
 ### Ou se preferir...
 

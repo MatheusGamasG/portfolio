@@ -9,7 +9,6 @@ import commitment from '../resources/commitment.png'
 
 function Home() {
     
-
     return (
         <HomeContainer id="inicio">
             <section className="home__title-photo-section">
