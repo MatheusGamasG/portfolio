@@ -43,6 +43,7 @@ const FormacaoHabilidadesContainer = styled.section`
     min-height: 30vh;
     padding: 3rem;
     display: flex;
+    justify-content: space-around; 
 
     .formacao-habilidades__formacao, .formacao-habilidades__habilidades {
         width: 50%;

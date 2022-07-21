@@ -54,7 +54,7 @@ export default function SimpleSlider() {
   const SliderItem = styled.div`
     background: #020202;
     padding: 2rem;
-    height: 20rem;
+    min-height: 20rem;
     text-align: center;
     color: #FFFFFF;
     border-radius: 3rem;
