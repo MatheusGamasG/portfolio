@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import background from "../resources/background2.png";
+import SimpleSlider from "../Carousel";
 
 function Projetos() {
 
     return (
         <ProjetosContainer>
             <h2 className="projetos__titulo">Projetos.</h2>
-            
+            <div className="projetos__slider">
+                <SimpleSlider />
+            </div>
         </ProjetosContainer>
     );
 }
@@ -18,8 +21,6 @@ const ProjetosContainer = styled.section`
     background-image: url(${background});
     min-height: 25vh;
     padding: 3rem 3rem 3rem 4rem;
-    display:flex;
-    align-items: center;
 
     .projetos__titulo {
         color: #FFF;
@@ -37,5 +38,9 @@ const ProjetosContainer = styled.section`
         display:inline-block;
         margin-right: 2rem;
         vertical-align:middle;
+    }
+
+    .projetos__slider {
+        margin: 0 25rem;
     }
 `
