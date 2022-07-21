@@ -13,7 +13,7 @@ function Sobre() {
                 <section className="sobre__apresentacao ">
                     <h2 className="sobre__titulo">Sobre.</h2>
                     
-                    <p className="sobre__paragrafo-principal"><span>Olá,</span>Meu nome é <span>Matheus</span> e sou estudante de Análise e Desenvolvimento de Sistemas e, atualmente, trabalho como professor. Venho me especializando em Desenvolvimento Front-End com diversos cursos livres em plataformas como Alura e Digital Innovation One, mas meu objetivo posterior é ser Full Stack. Meu objetivo atual é transicionar para a área de tecnologia. Possuo experiência acadêmica, sei como estudar com afinco e possuo facilidade com tecnologia e com comunicação. Além disso, acredito que posso agregar muito com as soft skills adquiridas em minha carreira pregressa.</p>
+                    <p className="sobre__paragrafo-principal"><span>Olá,</span>Meu nome é <span>Matheus</span>, sou estudante de Análise e Desenvolvimento de Sistemas e trabalho como <span>Desenvolvedor Java Júnior</span>. Venho me especializando em Desenvolvimento com diversos cursos livres em plataformas como Alura, Coursera e na prática do dia a dia, meu objetivo é que, com o tempo, possa me chamar de FullStack. Meu objetivo atual é ganhar mais experiência profissional na área de desenvolvimento. Possuo experiência acadêmica, sei como estudar com afinco e possuo facilidade com tecnologia e com comunicação. Além disso, acredito que posso agregar muito com as soft skills adquiridas em minha carreira pregressa (professor).</p>
                 </section>
                 <section className="sobre__contatos">
                     <p className="sobre__contato-paragrafo">Quer conversar comigo?</p>
@@ -46,6 +46,7 @@ const SobreContainer = styled.section`
         margin: 0;
         padding: 2rem;
         font-size: 2.5rem;
+        font-weight: 700;
     }
 
     .sobre__titulo::before {

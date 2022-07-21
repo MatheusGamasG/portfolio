@@ -72,6 +72,7 @@ const HomeContainer = styled.main`
         margin: 1rem;
         font-size: 4rem;
         text-wrap:wrap;
+        font-weight: 700;
     }
 
     .home__subtitulo-container {

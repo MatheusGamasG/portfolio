@@ -2,6 +2,7 @@ import Header from './Header';
 import Home from './Home';
 import Sobre from './Sobre';
 import FormacaoHabilidades from './FormacaoHabilidades';
+import Projetos from './Projetos';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <Sobre />
       <FormacaoHabilidades />
+      <Projetos />
     </>
   );
 }
