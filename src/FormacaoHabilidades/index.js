@@ -5,7 +5,7 @@ import background from "../resources/img.png"
 
 function FormacaoHabilidades() {
 
-    const habilidades = ["Java, Spring Boot, JPA/Hibernate", "Maven", "Angular (básico)", "React (básico)", "HTML, CSS, Javascript e Typescript", "PostgreSQL e mySQL", "Fundamentos de API REST", "Versionamento com Git", "Noções básicas de Docker"];
+    const habilidades = ["Java, Spring Boot, JPA/Hibernate", "Maven", "Angular (básico)", "React (básico)", "HTML, CSS, Javascript e Typescript", "PostgreSQL e mySQL", "Fundamentos de API REST", "Versionamento com Git", "Docker"];
 
     return (
         <FormacaoHabilidadesContainer id="formacao-habilidades">
