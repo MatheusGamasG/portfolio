@@ -20,7 +20,7 @@ function Projetos() {
                         <li>Twilio</li>
                         <li>React</li>
                     </ul>
-                    <p>Código no Github: <a href="">DSMeta</a></p>
+                    <p>Código no Github: <a href="https://github.com/MatheusGamasG/DSMeta">DSMeta</a></p>
                 </article>
                 <article className="projetos__card">
                     {/* <img src={commitment} alt="Imagem de um aperto de duas mãos" className="card__photo"/> */}
@@ -30,7 +30,7 @@ function Projetos() {
                         <li>Java</li>
                         <li>Spring Boot</li>
                     </ul>
-                    <p>Código no Github: <a href="">Parking Lot API</a></p>
+                    <p>Código no Github: <a href="https://github.com/MatheusGamasG/parking-control">Parking Lot API</a></p>
                 </article>
                 <article className="projetos__card">
                     {/* <img src={resilience} alt="Imagem de uma escada sendo dobrada sem quebrar" className="card__photo"/> */}
@@ -40,7 +40,7 @@ function Projetos() {
                         <li>Angular</li>
                         <li>Angular Material</li>
                     </ul>
-                    <p>Código no Github: <a href="">ConFusion</a></p>
+                    <p>Código no Github: <a href="https://github.com/MatheusGamasG/conFusion">ConFusion</a></p>
                 </article>
             </section>
         </ProjetosContainer>
