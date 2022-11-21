@@ -1,6 +1,6 @@
 # Portfólio Pessoal
 
-O objetivo desse repo é de construir meu portfólio pessoal. O intuit é mantê-lo sempre atualizado para demonstrar minha evolução enquanto aprendiz de programação. ☕📙
+O objetivo desse repo é de construir meu portfólio pessoal. O intuito é mantê-lo sempre atualizado para demonstrar minha evolução enquanto aprendiz de programação. ☕📙
 
 ## Construído com:
 

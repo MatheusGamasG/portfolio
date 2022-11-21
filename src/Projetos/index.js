@@ -98,4 +98,24 @@ const ProjetosContainer = styled.section`
     .projetos__card a {
         text-decoration: none;
     }
+
+    @media screen and (max-width: 1024px) {
+        .projetos__card {
+            min-width: 30%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .projetos__cards {
+            flex-direction: column;
+        }
+
+        .projetos__card {
+            min-width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 1.5rem 0;
+    }
 `

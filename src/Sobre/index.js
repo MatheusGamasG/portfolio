@@ -104,4 +104,20 @@ const SobreContainer = styled.section`
     .sobre__contato-icone:hover {
         opacity: 0.6;
     }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+
+        .sobre__apresentacao {
+            width: 90%;
+        }
+
+        .sobre__contatos {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 1.5rem 0;
+    }
 `;

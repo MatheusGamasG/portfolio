@@ -78,6 +78,7 @@ const HomeContainer = styled.main`
         position:relative;   
         padding:1rem;
         overflow:hidden;
+        z-index: 0;
         transition: .4s;
     }
 
@@ -271,6 +272,35 @@ const HomeContainer = styled.main`
 
     .home__softskills-card p {
         font-size: 1rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        min-height: 50vh;
+
+        .home__softskills {
+            display: none;
+        
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .home__title-photo-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .home__textos {
+            margin: 0 0 1rem 0;
+            width: 90%;            
+        }
+
+        .home__foto-container {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 1.5rem 0;
     }
 `;
 

@@ -72,4 +72,18 @@ const FormacaoHabilidadesContainer = styled.section`
         font-size: 1.2rem;
         padding: 3rem;
     }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+        .formacao-habilidades__formacao, .formacao-habilidades__habilidades {
+            width: 90%;
+            color: #FFF;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 1.5rem 0;
+    }
 `

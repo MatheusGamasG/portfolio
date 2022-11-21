@@ -23,5 +23,9 @@ const FooterDiv = styled.div`
         a {
             text-decoration: none;
         }
+
+        @media screen and (max-width: 480px) {
+            padding: 1.5rem 0;
+        }
     `;
 

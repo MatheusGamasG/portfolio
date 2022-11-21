@@ -1,36 +1,40 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
-import HamburguerMenu from '../HamburguerMenu/index';
+import { slide as Menu } from 'react-burger-menu';
+import './index.css';
 
+export default props => {
+  return (
+    <HamburguerContainer>
+        
+        <Menu>
+            <a className="menu-item" href="#inicio">
+            Início
+            </a>
+            <a className="menu-item" href="#sobre">
+            Sobre
+            </a>
+            <a className="menu-item" href="#formacao-habilidades">
+            Formação e Habilidades
+            </a>
+            <a className="menu-item" href="#projetos">
+            Projetos
+            </a>
+        </Menu>    
+        <h2 className="header__logo">MTH</h2>
+    </HamburguerContainer>
+  );
+};
 
-function Header() {
-
-
-    return (
-        <>
-        <HamburguerMenu />
-        <HeaderContainer>
-            <h2 className="header__logo">MTH</h2>
-            <nav className="header__navigation">
-                <a className="header__navigation-anchor" href="#inicio">Início</a>
-                <a className="header__navigation-anchor" href="#sobre">Sobre</a>
-                <a className="header__navigation-anchor" href="#formacao-habilidades">Formação e Habilidades</a>
-                <a className="header__navigation-anchor" href="#projetos">Projetos</a>
-            </nav>
-        </HeaderContainer>
-        </>
-    )
-}
-
-export default Header;
-
-const HeaderContainer = styled.section`
+const HamburguerContainer = styled.section`
     background: #000;
     display:flex;
     justify-content: space-between;
     padding: 0 3rem;
     align-items: center;
     min-height: 7vh;
+    position: fixed;
+    width:100%;
 
     .header__logo {
         font-famiy:roboto, sans-serif;
@@ -68,4 +72,9 @@ const HeaderContainer = styled.section`
         border-bottom: .3rem solid var(--default-color);
         color: var(--default-color);
     }
-`
+
+    
+    @media screen and (min-width: 480px) {
+        display:none;
+    }
+`;
