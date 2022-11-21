@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { slide as Menu } from 'react-burger-menu';
 import './index.css';
 
-export default HamburguerMenu = props => {
-  return (
-    <HamburguerContainer>
+function HamburguerMenu() {
+
+    return (
+        <HamburguerContainer>
         
         <Menu>
             <a className="menu-item" href="#inicio">
@@ -23,8 +24,10 @@ export default HamburguerMenu = props => {
         </Menu>    
         <h2 className="header__logo">MTH</h2>
     </HamburguerContainer>
-  );
-};
+    );
+}
+
+export default HamburguerMenu;
 
 const HamburguerContainer = styled.section`
     background: #000;
