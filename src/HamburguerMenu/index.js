@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { slide as Menu } from 'react-burger-menu';
 import './index.css';
 
-export default props => {
+export default HamburguerMenu = props => {
   return (
     <HamburguerContainer>
         
